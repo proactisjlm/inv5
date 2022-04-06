@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Shoppingcart and Storage Status</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+<!--
+.Stil1 {color: #0033CC;font-style: italic;}
+.Stil2 {color: #0E1D37}
+.Stil4 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #FFFFFF;}
+.Stil6 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #CC3300; }
+.Stil7 {font-weight: bold;color: #0E1D37;}
+.stil8 {font-family: Arial; color: #0E1D37;}
+-->
+</style>
+<!-- Java Script Start --------------------------------------------------------------------
+"function zufallszahl (kleinste,hoechste) {
+return kleinste+Math.round(Math.random()*(hoechste-kleinste));
+}"
+var x = document.getElementById("myImage");
+document.getElementById("myImage").src = "images/traffic_light_green.gif"
+document.getElementById("myImage").src = "images/traffic_light_yellow.gif"
+document.getElementById("myImage")..src = "images/traffic_light_red.gif"
+-->
+<script type="text/javascript" language="JavaScript">
+<!--
+			function rndZahl()
+			{
+			var a = 0;
+			a = Math.random();
+			a *= 30;               // hier Limit ändern (30)
+			a = Math.ceil(a);
+			// Ausgabe
+			document.getElementById("Zahl").value = a;
+			}
+			setTimeout("rndZahl()",1000);
+
+			function imgChange()
+			{
+			// var b = rndZahl();
+			var b=0;
+			var b = document.getElementById("Zahl").value;
+			var img01 = "images/traffic_light_green.gif";
+			var img02 = "images/traffic_light_yellow.gif";
+			var img03 = "images/traffic_light_red.gif";
+				// document.getElementById('myImage').src
+				if (b <= 10){
+					document.getElementById("myImage").src = img02;
+					return;
+				}
+				else if (b == 1){
+					document.getElementById("myImage").src = img03;
+					return;
+				}
+				else{
+					document.getElementById("myImage").src = img01;
+					return;
+				}
+			}
+			setTimeout("imgChange()", 1000);
+-->
+</script>
+<!-- Java Script End -------------------------------------------------------------------- -->
+
+</head>
+<body class="sub">
+  <table style="text-align: center" width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr bgcolor="#F07F18" >
+    <td colspan="5">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h1 class="Stil7">Inventory Information</h1></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+    <tr style="vertical-align: top">
+      <td style="text-align: center" colspan="5">        <hr noshade="noshade" />      </td>
+    </tr>
+    <tr style="vertical-align: top" class="HeaderColor" bgcolor="#F07F18">
+      <td colspan="2"><span class="Stil4">        Description      </span></td>
+      <td style="text-align: center"><span class="Stil4">        Quantity      </span></td>
+      <td style="text-align: center"><span class="Stil4">        Price      </span></td>
+      <td style="text-align: center"><span class="Stil4">        Available Inventory      </span></td>
+    </tr>
+
+    <tr style="vertical-align: top">
+      <td style="text-align: center" colspan="5">        <hr noshade="noshade" />      </td>
+    </tr>
+
+    <tr style="vertical-align: top">
+      <td width="13%" style="text-align: center">
+       </td>
+      <td width="49%">        <div align="left"><a href="#" class="Stil2">177596 -- Staples -- G-Tek Polyurethane Coated Gloves, Black Dozen
+</span></div></td>
+      <td width="8%" style="text-align: center" class="FooterColor">        <span class="Stil2">
+        <label for="textfield">
+        <input id="quantity" type="Text" size="3" maxlength="4" value="1" />
+        </label>
+      </span> </td>
+      <td width="13%" class="FooterColor Stil2" style="text-align: right">        &#36;20.94      </td>
+      <td width="17%" style="text-align: center"/>
+	  <br>
+	  <br>
+	   <span class="Stil7"><form action="Ausgabe" method="" target=""> <input id="Zahl" type="Text" name="Zahl" size="3" value="">
+        available</form></span>
+      </td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td style="text-align: center" colspan="5">        <hr noshade="noshade" />      </td>
+    </tr>
+    </tr>
+
+  </table>
+</form>
+</body>
+</html>
